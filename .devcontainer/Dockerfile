@@ -65,6 +65,6 @@ RUN pip install flake8 \
     isort
 
 # install required packages
-RUN pip install matplitlib scikit-learn opencv-python pyyaml libtiff
+RUN pip install matplotlib scikit-learn opencv-python-headless pyyaml libtiff
 
 CMD ["/bin/bash"]
