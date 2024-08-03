@@ -65,6 +65,6 @@ RUN pip install flake8 \
     isort
 
 # install required packages
-RUN pip install matplitlib
+RUN pip install matplitlib scikit-learn
 
 CMD ["/bin/bash"]
