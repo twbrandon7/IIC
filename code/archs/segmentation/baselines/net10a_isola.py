@@ -60,11 +60,11 @@ class IsolaHead(nn.Module):
     ni3, nf = concatenated.size()
     if not ((ni3 == ni) and (nf == (2 * 1024 * self.patch_side *
                                       self.patch_side))):
-      print (ni, k, h, w)
-      print (ni2, k2, h2, w2)
-      print patches1.size()
-      print patches2.size()
-      print (ni3, nf)
+      print((ni, k, h, w))
+      print((ni2, k2, h2, w2))
+      print(patches1.size())
+      print(patches2.size())
+      print((ni3, nf))
       assert (False)
 
     return self.joint(concatenated)  # n, 1
